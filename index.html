@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>SoundFacets</title>
+	<link type="text/css" rel="stylesheet" media="screen" href="style.css"></link>
+</head>
+<body>
+	<h1>SoundFacets</h1>
+	<h4>An auditory add-on for the <a href="http://www.simile-widgets.org/exhibit3/">Exhibit 3.0</a> faceted browser</h3>
+	<a href="oliveros.html"><div class="demolink">Demo: "Some Sound Observations" by Pauline Oliveros</div></a>
+	<hr>
+	<h2>Setup</h2>
+	<h3>0: Setup Exhibit</h3>
+	<p>See <a href="http://www.simile-widgets.org/wiki/Getting_Started#Getting_Started_with_Exhibit_3.0">"Getting Started with Exhibit 3.0"</a>. If you are not hosting your own installation of Exhibit, be sure to link to API version 3.1.1 or higher, as below:</p>
+	<code>&lt;script src="http://api.simile-widgets.org/exhibit/3.1.1/exhibit-api.js"&gt;&lt;/script&gt;</code>
+	<h3>1: Include script</h3>
+	<p>Copy and paste the following line into the head of the HTML document where you run Exhibit:</p>
+	<code>&lt;script src="http://web.mit.edu/akstuhl/www/soundfacets/soundfacets.js"&gt;&lt;/script&gt;</code>
+	<h3>2: Edit JSON</h3>
+	<p>Use the following syntax to denote sounds you wish to associate with items in your data set. See <a href="oliveros.js">oliveros.js</a> for an example.</p>
+	<code>"sound-example": "on",</code>
+	<h3>3: Add sound files</h3>
+	<p>Copy .mp3 sound files for each of the associated sounds into a directory called "sounds". These files should have the same names as used in your JSON file, e.g. "sound-example.mp3".</p>
+	<h3>4: Add sound facets</h3>
+	<p>Add facets whose "ex:expression" values match the same naming convention, as in the example below. The facet label can be whatever text you want to display.<p>
+	<code>&lt;td&gt;&lt;div ex:role="facet" ex:expression=".sound-example" ex:facetLabel="Example"&gt;&lt;/div&gt;&lt;/td&gt;</code>
+	<h3>5: Include CSS</h3>
+	<p>Copy and paste the following line into the head of your html document:<p>
+	<code>&lt;link href="http://web.mit.edu/akstuhl/www/soundfacets/soundfacets.css" type="css" rel="stylesheet" /&gt;</code>
+	<p>Instead or in addition, you can style sound facets by targeting <code>.exhibit-facet[ex\:expression*='.sound-']</code> in your custom CSS</p>
+	<hr>
+	<h2>Technical Notes</h2>
+	<p>SoundFacets requires support for both Exhibit 3.0 and the WebAudio API. As of writing, SoundFacets works correctly in Firefox 34.0.5, Safari 7.1.2, and Chrome 39.0.2171.95.</p>
+	<hr>
+	<h2>Troubleshooting</h2>
+	<p>SoundFacets is still in initial development. If you encounter an issue or have any questions, please contact <a href="mailto:akstuhl@mit.edu">akstuhl@mit.edu</a>.</p>
+</body>
+

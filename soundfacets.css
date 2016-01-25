@@ -1,0 +1,24 @@
+.exhibit-facet[ex\:expression*=".sound-"] .exhibit-resizableDivWidget-resizer {
+	display: none;
+}
+
+.exhibit-facet[ex\:expression*=".sound-"] .exhibit-facet-body {
+	height: 45px !important;
+	border: none !important;
+}
+
+.exhibit-facet[ex\:expression*=".sound-"] .exhibit-facet-value {
+	display: none;
+}
+
+.exhibit-facet[ex\:expression*=".sound-"] .exhibit-facet-value[title="on"] {
+	display: block;
+}
+
+.exhibit-facet[ex\:expression*=".sound-"] .exhibit-facet-header-filterControl {
+	display: none !important;
+}
+
+.exhibit-facet[ex\:expression*=".sound-"] .exhibit-facet-value-checkbox {
+	display: none !important;
+}

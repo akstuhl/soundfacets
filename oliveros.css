@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Georgia","Times",serif;
+	color: black;
+}
+
+h1 {
+	font-weight: normal;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+li {
+	margin-bottom: 1.5em;
+}
+
+ol {
+	list-style-type: none;
+}
+
+#top-panels {
+	width: 100%;
+	overflow: scroll;
+}
+
+table.observation {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table, tr, td {
+	font-size: inherit;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+tr, td {
+	vertical-align: center;
+}
+.text {
+	font-style: italic;
+}
+.text em {
+	font-style: normal;
+}
+
+div.text {
+	width: 27em;
+	margin-left: -8px;
+}
+
+.passage {
+	color: #999999;
+}
+
+div.exhibit-collectionView-header {
+	margin-bottom: 3em;
+	text-align: center;
+}

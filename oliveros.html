@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Oliveros: &ldquo;Some Sound Observations&rdquo;</title>
+		<meta charset="UTF-8">
+		<link type="text/css" rel="stylesheet" media="screen" href="oliveros.css"></link>
+		<link type="text/css" rel="stylesheet" media="screen" href="soundfacets.css"></link>
+		<link href="oliveros.js" type="application/json" rel="exhibit-data" />
+		<script src="http://api.simile-widgets.org/exhibit/3.1.1/exhibit-api.js"></script>
+		<script src="soundfacets.js"></script>
+ 	</head>
+	<body>
+		<div id="main-content">
+			<div id="title-panel">
+				<h1>&ldquo;Some Sound Observations&rdquo; by Pauline Oliveros</h1>
+			</div>
+			
+			<div id="top-panels">
+				<table width="100%"><tr>
+					<td><div ex:role="facet"
+						ex:expression=".sound-bulldozer"
+						ex:facetLabel="bulldozer"></div></td>
+					<td><div ex:role="facet"
+						ex:expression=".sound-trees"
+						ex:facetLabel="trees"></div></td>
+					<td><div ex:role="facet"
+						ex:expression=".sound-airplane"
+						ex:facetLabel="airplane"></div></td>
+					<td><div ex:role="facet"
+						ex:expression=".sound-cars"
+						ex:facetLabel="cars"></div></td>
+					<td><div ex:role="facet"
+						ex:expression=".sound-train"
+						ex:facetLabel="train"></div></td>
+					<td><div ex:role="facet"
+						ex:expression=".sound-feedback"
+						ex:facetLabel="feedback"></div></td>
+					<td><div ex:role="facet"
+						ex:expression=".sound-orchestra"
+						ex:facetLabel="orchestra"></div></td>
+					<td><div ex:role="facet"
+						ex:expression=".sound-insects"
+						ex:facetLabel="insects"></div></td>
+				</tr></table>
+			</div>
+			
+			<div ex:role="viewPanel" style="padding: 1em 0.5in;">
+				<div ex:role="view"
+					ex:label="Details"
+					ex:viewClass="Tile"
+					ex:showAll="true">
+				</div>
+				<table ex:role="lens" class="observation" style="display: none;"><tr>
+					<td><div ex:content=".label" class="passage"></div></td>
+					<td><div ex:content=".fulltext" class="text"></div></td>
+				</tr></table>
+			</div>
+		</div>
+			
+
+	</body>
+</html>
